@@ -1,0 +1,35 @@
+apply from: 'dependencies.gradle'
+apply from: 'idea.gradle'
+
+buildscript {
+    repositories.maven { url gradle.nexus }
+ }
+
+subprojects {
+    apply plugin: 'java'
+
+    group = 'toregard'
+    version = '1.1.0-SNAPSHOT'
+    repositories.maven { url gradle.nexus }
+
+    sourceCompatibility = '1.7'
+    targetCompatibility = '1.7'
+    [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+
+
+
+    /**
+     * Stores the war file in the maven repository (locally, not in nexus).
+     * Jenkins needs this since the deployIt jobs will get the war files from the local maven repo.
+     */
+    publishing.publications {
+        mavenJava(MavenPublication) {
+            from components.web
+        }
+    }
+    publishToMavenLocal.dependsOn(build)
+
+
+
+}

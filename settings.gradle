@@ -1,4 +1,4 @@
 gradle.ext.nexus = 'http://nexus.ifint.biz:8081/content/groups/public/'
 
-//include 'ActivityFramework'
+
 

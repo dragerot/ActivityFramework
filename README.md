@@ -1,5 +1,5 @@
 # ActivityFramework
-A simple framework to write activities in java
+A simple framework to write activities in java.
 
 Keep it simple. That's the main goal.
 

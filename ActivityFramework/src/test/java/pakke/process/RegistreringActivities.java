@@ -1,10 +1,8 @@
-package pakke;
-
-import pakke.process.Aktivities;
+package pakke.process;
 
 import java.util.ArrayList;
 
-public class RegistreringActivities extends Aktivities<Request> {
+public class RegistreringActivities extends Activities<Request> {
     ArrayList<String> activitylog = new  ArrayList<String>();
 
     public ArrayList<String> getActivitylog() {

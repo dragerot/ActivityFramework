@@ -1,4 +1,4 @@
-package pakke;
+package pakke.process;
 
 public class Request{
     String ssn;

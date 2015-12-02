@@ -10,11 +10,11 @@ import java.util.ArrayList;
  V - Value
  S,U,V etc. - 2nd, 3rd, 4th types
  */
-public class Aktivities<T> {
+public class Activities<T> {
 
     Input<T> input;
 
-    public Aktivities(T t){
+    public Activities(T t){
         input= new Input<T>(t);
     }
 

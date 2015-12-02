@@ -1,1 +1,1 @@
-ext.itextpdf = 'com.itextpdf.tool:xmlworker:5.5.5'
+ext.junit = 'junit:junit:4.11'
